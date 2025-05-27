@@ -18,7 +18,7 @@ def render() -> Component:
                 {
                     'title': column,
                     'dataIndex': column,
-                    'width': 'calc(100% / {})'.format(demo_df.shape[0]),
+                    'width': 'calc(100% / {})'.format(demo_df.shape[1]),
                 }
                 for column in demo_df.columns
             ],
@@ -138,7 +138,7 @@ fac.AntdSpin(
             {
                 'title': column,
                 'dataIndex': column,
-                'width': 'calc(100% / {})'.format(demo_df.shape[0]),
+                'width': 'calc(100% / {})'.format(demo_df.shape[1]),
             }
             for column in demo_df.columns
         ],
